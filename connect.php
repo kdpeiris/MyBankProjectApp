@@ -2,8 +2,8 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
         //$conn = mysqli_connect('localhost', 'root', '', 'myproject01db') or die("Connection Failed:" .mysqli_connect_error());
         $conn = mysqli_init();
-        //mysqli_ssl_set($conn,NULL,NULL, "{path to CA cert}", NULL, NULL);
-        mysqli_real_connect($conn, "mybankprojectdbserver.mysql.database.azure.com", "kdpeiris", "Dil@0718", "mybankprojectdb", "3306");
+        //mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
+        mysqli_real_connect($conn, "mybankprojectdbserver.mysql.database.azure.com", "kdpeiris", "Dil@0718", "mybankprojectdb", 3306);
         if(mysqli_connect_errno($conn)){
             die('Failed to connect to MySQL: '.mysqli_connect_error());
         }
