@@ -4,9 +4,6 @@
         $conn = mysqli_init();
         //mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
         mysqli_real_connect($conn, "mybankprojectdbserver.mysql.database.azure.com", "kdpeiris", "Dil@0718", "mybankprojectdb", 3306);
-        if(mysqli_connect_errno($conn)){
-            die('Failed to connect to MySQL: '.mysqli_connect_error());
-        }
         if(isset($_POST['gname']) && isset($_POST['sname']) && isset($_POST['bday']) && isset($_POST['nic']) && isset($_POST['gender']) && isset($_POST['email']) && isset($_POST['pnumber']) && isset($_POST['atype'])){
             $given_name = $_POST['gname'];
             $surname = $_POST['sname'];
