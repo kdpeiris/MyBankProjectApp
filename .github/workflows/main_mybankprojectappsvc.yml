@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'mybankprojectAppSvc'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8D37C030BDB94199B3CB4882807D03B7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_15E3809981E54F7E8B3F4EBB92FA3B05 }}
           package: .
