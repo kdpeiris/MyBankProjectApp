@@ -39,7 +39,7 @@
             </tr>
             <tr>
                 <td><label for="labelemail">Email:</label></td>
-                <td><input type="email" id="email" name="email"></td>
+                <td><input type="email" id="email" name="email" required></td>
             </tr>
             <tr>
                 <td><label for="labelpnumber">Phone Number:</label></td>
